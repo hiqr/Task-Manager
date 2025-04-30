@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="taskmanagerstyles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 style="text-align: center;">Task Manager</h1>
+
+    <!-- Dark mode button -->
+    <button id="darkModeToggle" type="button">Dark Mode</button>
+
+    <!-- Task input form -->
+    <form id="taskForm">
+      <input type="text" id="taskName" placeholder="Task Name" required>
+
+      <!-- Selecting Priority level -->
+      <select id="taskPriority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+
+      <!-- Important task checkbox -->
+      <label><input type="checkbox" id="taskImportant"> Important</label>
+
+      <!-- Submit button -->
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="taskmanager"></div>
+  </div>
+
+  <!-- Link to JavaScript file -->
+  <script src="taskmanagerscript.js"></script>
+</body>
+</html>
